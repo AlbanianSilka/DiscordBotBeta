@@ -4,7 +4,7 @@ import sqlite3
 import random
 
 bot = commands.Bot(command_prefix='!')
-conn = sqlite3.connect('NewData.db')
+conn = sqlite3.connect('YourDatabase')
 cursor = conn.cursor()
 cursor.execute('''CREATE TABLE IF NOT EXISTS heroes(hero_id INTEGER PRIMARY KEY, hero_name TEXT, 
 hero_class TEXT, hero_attack TEXT, hero_health TEXT, strength TEXT, intelligence TEXT, dexterity TEXT,
